@@ -1,0 +1,126 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    height: 100%;
+}
+
+/*// PATERNN //*/
+
+nav.desktop  a.selected{
+    color: red;
+}
+
+.container{
+    max-width: 960px;
+
+    margin: 0 auto;
+    padding: 0 2%;
+}
+
+.clear{
+    clear: both;
+}
+
+/*// HEADER //*/
+
+header{
+    background-color: #333;
+    padding: 4px 0;
+}
+
+/*// DESKTOP //*/
+
+.logo__desktop{
+    float: left;
+}
+
+.logo__desktop a{
+    color: white;
+    font-size: 18px;
+}
+
+nav.desktop{
+    float: right;
+}
+
+nav.desktop li{
+    display: inline-block;
+    padding: 0 15px;
+}
+
+nav.desktop a{
+    color: white;
+    text-decoration: none;
+}
+
+nav.desktop a:hover{
+    text-decoration: underline;
+}
+
+/*// MOBILE //*/
+
+nav.mobile{
+    display: none;
+}
+
+@media screen and (max-width: 768px){
+    .logo__desktop{
+        display: none;
+    }
+
+    nav.desktop{
+        display: none;
+    }
+
+    nav.mobile{
+        width: 100%;
+
+        display: block;
+        position: relative;
+        
+        text-align: center;
+    }
+
+    .logo__mobile a{
+        color: white;
+        font-size: 18px;
+        text-decoration: none;
+    }
+
+    nav.mobile h3{
+        position: absolute;
+        left: 0;
+        top: 0;
+
+        cursor: pointer;
+        color: rgb(230,230,230);
+    }
+
+    nav.mobile ul{
+        width: 104%;
+
+        display: none;
+        position: absolute;
+        left: -2%;
+        top: 27px;
+
+        list-style-type: none;
+        text-align: center;
+        background-color: #333;
+    }
+
+    nav.mobile li{
+        padding: 8px 0;
+
+        border-top: 1px solid white;
+    }
+
+    nav.mobile a{
+        text-decoration: none;
+        color: white;
+    }
+}
